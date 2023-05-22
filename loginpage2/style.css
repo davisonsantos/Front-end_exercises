@@ -1,0 +1,97 @@
+body{
+    margin: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+#container{
+    background:#d7dade;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+}
+#box{
+    background-color: #fff;
+    border-color: gray;
+    border: #d7dade 2px solid;
+    height: 60vh;
+    width: 30vw;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items:center;
+    box-shadow: rgb(158, 157, 157) 0px 0px 10px;
+}
+#h1{
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 10px;
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items:center;
+}
+.itens{
+    margin: 5px;
+    padding: 5px;
+}
+#facebook-name{
+    width: 240px;
+    display: block;
+    margin: auto;
+}
+.cliques:hover{
+    cursor: pointer;
+}
+#esqueceu{
+    color: blue;
+}
+#esqueceu:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#botao_criar{
+    background-color: #42b72a;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 18px;
+    width: 170px;
+    height: 50px;
+}
+#botao_entrar{
+    background-color: #1877f2;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    height: 50px;
+}
+.botoes:hover{
+    cursor: pointer;
+}
+.botoes{
+    font-family: Helvetica, Arial, sans-serif;
+}
+.campos{
+    width: 100%;
+    border-radius: 5px;
+    border: rgba(168, 166, 166, 0.575) 1px solid;
+    padding: 15px;
+
+}
+.inputs{
+    border-color: transparent;
+    width: 95%;
+    height: 95%;
+    outline: 0;
+}
