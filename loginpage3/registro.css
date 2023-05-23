@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #93B3DB;
+    --secondary-color: #6B256F;
+}
+
+body {
+    background: linear-gradient(100deg, var(--primary-color), var(--secondary-color));
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.box {
+    border-radius: 3px;
+    border: 1px black solid;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px 5px;
+    background-color: #35122eb9;
+    color: #c9d9ec;
+}
+
+
+#nome,
+#senha,
+#senha2 {
+    border-color: transparent;
+    background-color: transparent;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    margin: 0;
+    outline: 0;
+    font-size: 20px;
+}
+
+.item-div {
+    background-color: #fff;
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+
+#registrar {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    background: linear-gradient(100deg, var(--primary-color), var(--secondary-color));
+    text-transform: uppercase;
+}
+#registrar-div{
+    padding: 0 10px 0 10px;
+}
+#back-p{
+    padding: 10px;
+}
+#back{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}

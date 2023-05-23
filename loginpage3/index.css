@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #93B3DB;
+    --secondary-color: #6B256F;
+}
+
+body {
+    background: linear-gradient(100deg, var(--primary-color), var(--secondary-color));
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+#box {
+    width: 30vw;
+}
+
+.box1 {
+    border-radius: 3px;
+    border: 1px black solid;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px 5px;
+    background-color: #35122eb9;
+    color: #c9d9ec;
+}
+
+.box2 {
+    background-color: white;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px black solid;
+    text-align: center;
+    box-shadow: 0 0 10px 5px;
+    background-color: #35122eb9;
+    color: #dbe7f7;
+}
+
+#nome,
+#senha {
+    border-color: transparent;
+    background-color: transparent;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    outline: 0;
+    font-size: 20px;
+}
+
+.itens {
+    background-color: #fff;
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+
+#botao-div {
+    text-align: center;
+}
+
+#botao-entrar {
+    width: 95%;
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    background: linear-gradient(100deg, var(--primary-color), var(--secondary-color));
+    text-transform: uppercase;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#label-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin:  16px 20px 20px 20px;
+}
+#esquecer-senha:hover {
+    cursor: pointer;
+    color: #fff
+}
+
+#cadastro {
+    position: fixed;
+    font-weight: bold;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+.registro {
+    color: #f3a806;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#paragrafo {
+    width: 70%;
+}
+
+#cadastro:hover {
+    font-size: 16px;
+    color: rgb(221, 129, 67);
+}
