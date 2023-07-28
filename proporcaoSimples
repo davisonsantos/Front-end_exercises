@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(9, 9, 61);
+            color: white;
+        }
+
+        .content {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(26, 17, 73);
+        }
+
+        #bloco1 {
+            background-color: rgb(11, 19, 53);
+            box-shadow: 1px 1px 20px black;
+            color: white;
+            padding: 50px 100px;
+            border-radius: 10px;
+        }
+
+        .caixas {
+            display: block;
+            justify-content: space-between;
+            width: 200px;
+        }
+
+        .itens {
+            width: 80px;
+        }
+
+        #calc {
+            cursor: pointer;
+            padding: 5;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        #bloco2{
+            text-align: center;
+            padding: 20px;
+        }
+        h3{
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div id="bloco1">
+            <h1>PROPORÇÃO</h1>
+            <div id="caixadiv">
+                <div class="caixas">
+                    <label>P</label>
+                    <input type="number" id="a" class="itens">
+                    <input type="" value="X" id="b" class="itens"><br>
+                </div>
+                <div class="caixas">
+                    <label>D</label>
+                    <input type="number" id="c" class="itens">
+                    <input type="number" value="10" id="d" class="itens">
+                </div>
+            </div>
+        </div>
+        <div id="bloco2">
+        <button type="submit" id="calc" onclick="calcula()">calcular</button>
+        <h3 id="resul">X=?</h3>
+        </div>
+    </div>
+
+    <script>
+        function calcula() {
+            let val1 = document.getElementById("a").value
+            let val2 = document.getElementById("b")
+            let val3 = document.getElementById("c").value
+            let val4 = document.getElementById("d").value
+            let res = document.getElementById("resul")
+
+            val2.innerHTML = ""
+            let conta = val1 / (val3 / val4)
+            val2.innerHTML = conta
+            res.innerHTML = `X=${conta}`
+        }
+    </script>
+</body>
+
+</html>
